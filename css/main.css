@@ -352,11 +352,6 @@ ul {
     padding: 1.5rem;
   }
 }
-@media screen and (max-width: 42.5em) {
-  .navbar-img {
-    border: solid #3E54A3 1px;
-  }
-}
 
 @media screen and (max-width: 53.13em) {
   .git {
@@ -434,6 +429,11 @@ ul {
   -ms-flex-direction: row;
   flex-direction: row;
   justify-content: center;
+}
+@media screen and (max-width: 63.75em) {
+  .box {
+    border: none;
+  }
 }
 
 .info {
@@ -589,6 +589,12 @@ ul {
   .work {
     height: 110vh;
     margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 29.9em) {
+  .work {
+    height: 135vh;
+    margin-bottom: 4rem;
   }
 }
 .work__heading {
