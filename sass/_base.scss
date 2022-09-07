@@ -1,0 +1,34 @@
+$color-primary:#3E54A3;
+$color-button:#ED2C49;
+
+$bp-largest:63.75em;// 1020px
+$bp-large:53.13em;  // 850px
+$bp-medium:42.5em;  //640px
+$bp-small:34.3em;
+$bp-smallest:29.9em;
+
+
+html{
+    padding:0;
+    margin:0;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    box-sizing:border-box;
+    font-size: 62.5%; // 10px=1rem 
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Heebo', sans-serif;
+
+    @media screen and (max-width:$bp-large){
+       font-size:50%;   //8px
+    }
+    @media screen and (max-width:$bp-medium){
+        font-size:40%;
+    }
+    @media screen and (max-width:$bp-small){
+        font-size:38% ;
+    }
+
+}
