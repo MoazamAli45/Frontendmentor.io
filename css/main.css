@@ -13,6 +13,7 @@ body {
   font-size: 62.5%;
   font-family: "Barlow", sans-serif;
   font-family: "Heebo", sans-serif;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 53.13em) {
   body {
@@ -65,17 +66,21 @@ body {
   }
 }
 
+.row {
+  width: 90vw;
+  margin: auto;
+}
+
 .header__navbar {
   height: auto;
   clear: both;
   font-family: Barlow;
-  border-bottom: solid #3E54A3 1px;
-  margin-bottom: 1rem;
-  padding-bottom: 0;
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
   font-weight: 700;
   font-style: italic;
 }
-@media screen and (max-width: 53.13em) {
+@media screen and (max-width: 63.75em) {
   .header__navbar {
     border: none;
   }
@@ -116,7 +121,7 @@ body {
   flex-direction: row;
   font-family: Barlow;
 }
-@media screen and (max-width: 53.13em) {
+@media screen and (max-width: 63.75em) {
   .header__navbar-order {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,12 +221,12 @@ body {
 .header__navbar-git:focus {
   outline: none;
 }
-@media screen and (max-width: 53.13em) {
+@media screen and (max-width: 63.75em) {
   .header__navbar-git {
     border: none;
     color: black;
     background: white;
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
 }
 .header__navbar-ul {
@@ -235,7 +240,7 @@ body {
   font-size: 1.1rem;
   padding: 1.2rem;
 }
-@media screen and (max-width: 53.13em) {
+@media screen and (max-width: 63.75em) {
   .header__navbar-ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -347,10 +352,16 @@ ul {
     padding: 1.5rem;
   }
 }
+@media screen and (max-width: 42.5em) {
+  .navbar-img {
+    border: solid #3E54A3 1px;
+  }
+}
 
 @media screen and (max-width: 53.13em) {
   .git {
     border-bottom: solid #3E54A3 1px;
+    margin-left: 1rem;
   }
 }
 
@@ -364,7 +375,7 @@ ul {
   cursor: pointer;
   display: none;
 }
-@media screen and (max-width: 53.13em) {
+@media screen and (max-width: 63.75em) {
   .checkbtn-1 {
     display: block;
     -ms-flex-item-align: end;
@@ -412,10 +423,9 @@ ul {
   transform: scaleX(1);
 }
 
-.container {
-  padding-top: 4rem;
-  position: relative;
-  height: 60vh;
+.box {
+  padding-top: 2rem;
+  border-top: solid #3E54A3 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,12 +433,11 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .info {
+  align-self: flex-start;
   font-family: Barlow;
   position: relative;
   left: 0;
@@ -440,6 +449,11 @@ ul {
   color: rgba(103, 190, 206, 0.2);
   top: 17rem;
   left: 17rem;
+}
+@media screen and (max-width: 34.3em) {
+  .info::before {
+    padding-left: 1rem;
+  }
 }
 .info::after {
   content: "	″";
@@ -457,6 +471,12 @@ ul {
 @media screen and (max-width: 42.5em) {
   .info__heading {
     font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 29.9em) {
+  .info__heading {
+    padding-left: 1rem;
   }
 }
 .info__heading-1 {
@@ -471,6 +491,7 @@ ul {
 @media screen and (max-width: 29.9em) {
   .info__text {
     font-size: 1rem;
+    padding-left: 1rem;
   }
 }
 .info__button {
@@ -494,6 +515,16 @@ ul {
 @media screen and (max-width: 34.3em) {
   .info__button {
     font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 42.5em) {
+  .info__button {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 29.9em) {
+  .info__button {
+    margin-left: 1rem;
   }
 }
 .info__button:hover {
@@ -527,10 +558,9 @@ ul {
   display: block;
   -o-object-fit: cover;
   object-fit: cover;
-  right: 1rem;
-  width: 170%;
-  height: 170%;
-  padding-left: 3rem;
+  width: 130%;
+  height: 130%;
+  padding-left: 4rem;
 }
 @media screen and (max-width: 63.75em) {
   .info__img {
@@ -540,7 +570,7 @@ ul {
 
 .work {
   text-align: center;
-  height: 80vh;
+  height: 60vh;
   margin-top: 2rem;
 }
 @media screen and (max-width: 63.75em) {
@@ -550,14 +580,14 @@ ul {
     padding-bottom: 4rem;
   }
 }
-@media screen and (max-width: 42.5em) {
+@media screen and (max-width: 53.13em) {
   .work {
-    height: 130vh;
+    height: 90vh;
   }
 }
 @media screen and (max-width: 34.3em) {
   .work {
-    height: 120vh;
+    height: 110vh;
     margin-top: 0.5rem;
   }
 }
@@ -574,13 +604,15 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  justify-content: center;
   margin-top: 4rem;
   width: 98vw;
 }
-@media screen and (max-width: 42.5em) {
+@media screen and (max-width: 53.13em) {
   .work__card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 34.3em) {
@@ -592,10 +624,25 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 }
 .work__card-1 {
   font-family: Heebo;
+  width: 24%;
+  justify-self: center;
+}
+@media screen and (max-width: 53.13em) {
+  .work__card-1 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 34.3em) {
+  .work__card-1 {
+    width: 80%;
+    align-self: center;
+  }
 }
 .work__card-1-icon {
   font-size: 4rem;
@@ -659,6 +706,8 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 }
 .challenges .cards .card {
@@ -676,9 +725,10 @@ ul {
 }
 @media screen and (max-width: 34.3em) {
   .challenges .cards .card {
-    width: 60vw;
+    width: 65vw;
     -ms-flex-item-align: center;
     align-self: center;
+    justify-self: center;
   }
 }
 @media screen and (max-width: 29.9em) {
@@ -869,6 +919,11 @@ ul {
   height: 95vh;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 53.13em) {
+  .slack {
+    height: 90vh;
+  }
+}
 @media screen and (max-width: 29.9em) {
   .slack {
     margin-right: 0rem;
@@ -891,7 +946,12 @@ ul {
 }
 @media screen and (max-width: 63.75em) {
   .slack__background {
-    height: 95vh;
+    height: 85vh;
+  }
+}
+@media screen and (max-width: 53.13em) {
+  .slack__background {
+    height: 75vh;
   }
 }
 @media screen and (max-width: 42.5em) {
@@ -1011,19 +1071,16 @@ ul {
     width: 15rem;
   }
 }
-@media screen and (max-width: 34.3em) {
-  .slack__form-input {
-    width: 12rem;
-    margin-right: 20rem;
-  }
-}
 .slack__form-label {
   margin-right: 1rem;
   margin-top: 1.5rem;
 }
+.slack .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .slack__button {
-  position: absolute;
-  right: 15rem;
   padding: 1rem 2rem;
   border-radius: 20rem;
   border: solid white 1px;
@@ -1082,11 +1139,7 @@ ul {
   color: #89A6D1;
   font-size: 1.3rem;
   font-family: Heebo;
-}
-@media screen and (max-width: 34.3em) {
-  .slack__form-input::-webkit-input-placeholder {
-    font-size: 1.1rem;
-  }
+  padding-left: 0.5rem;
 }
 
 .footer__head {
@@ -1170,7 +1223,7 @@ ul {
   color: #757EA1;
   font-size: 1.2rem;
   font-family: Heebo;
-  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   font-weight: 300;
 }
 .footer__btn {

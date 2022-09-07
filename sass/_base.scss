@@ -3,9 +3,9 @@ $color-button:#ED2C49;
 
 $bp-largest:63.75em;// 1020px
 $bp-large:53.13em;  // 850px
-$bp-medium:42.5em;  //640px
-$bp-small:34.3em;
-$bp-smallest:29.9em;
+$bp-medium:42.5em;  //680px
+$bp-small:34.3em;   // 548
+$bp-smallest:29.9em;  //478
 
 
 html{
@@ -20,6 +20,7 @@ body{
     font-size: 62.5%; // 10px=1rem 
     font-family: 'Barlow', sans-serif;
     font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
 
     @media screen and (max-width:$bp-large){
        font-size:50%;   //8px
