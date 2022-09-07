@@ -130,6 +130,11 @@
    
     }
    
+    @media screen and (max-width:$bp-small){
+        left:0rem;
+        width:100vw;
+
+    }
 }
 &--logo{
     float:left;
@@ -536,8 +541,8 @@ ul{
             height:130vh;
         }
         @media screen and (max-width:$bp-small){
-          height:120vh;
-          
+          height:100vh;
+          margin-top: .5rem;
           }
           
     &__heading{
@@ -1085,6 +1090,9 @@ ul{
         font-size: 1.3rem;
         font-family: Heebo;
         
+        @media screen and (max-width:$bp-small){
+         font-size: 1.1rem;
+        }
      }
 }
 }

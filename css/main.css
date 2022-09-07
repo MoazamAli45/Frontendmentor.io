@@ -163,6 +163,12 @@ body {
     left: 1rem;
   }
 }
+@media screen and (max-width: 34.3em) {
+  .header__navbar-order {
+    left: 0rem;
+    width: 100vw;
+  }
+}
 .header__navbar--logo {
   float: left;
   margin-left: 2rem;
@@ -551,7 +557,8 @@ ul {
 }
 @media screen and (max-width: 34.3em) {
   .work {
-    height: 120vh;
+    height: 100vh;
+    margin-top: 0.5rem;
   }
 }
 .work__heading {
@@ -1075,6 +1082,11 @@ ul {
   color: #89A6D1;
   font-size: 1.3rem;
   font-family: Heebo;
+}
+@media screen and (max-width: 34.3em) {
+  .slack__form-input::-webkit-input-placeholder {
+    font-size: 1.1rem;
+  }
 }
 
 .footer__head {
