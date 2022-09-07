@@ -557,7 +557,7 @@ ul {
 }
 @media screen and (max-width: 34.3em) {
   .work {
-    height: 100vh;
+    height: 120vh;
     margin-top: 0.5rem;
   }
 }
